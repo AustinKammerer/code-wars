@@ -6,13 +6,13 @@
 function maxSum(arr, range) {
   let sums = [];
   range.forEach(function ([x, y]) {
-    let sum;
+    let sum = 0;
     for (let i = x; i <= y; i++) {
-      sum = 0;
       sum += arr[i];
     }
     sums.push(sum);
   });
+  console.log(sums);
   return Math.max(...sums);
 }
 
